@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect way to add text to a div
+    document.getElementById("myDiv").innerText = 10;
+    //Correct way
+    document.getElementById("myDiv").textContent = "10";
+  </script>
+</body>
+</html>
